@@ -1,0 +1,43 @@
+/** CSS for my Portfolio **/
+
+/** === Nav bar CSS === **/
+    /* Do something with vector graphics, or css graphics. */
+    nav > ul {
+        display: inline;
+    }
+
+/** === Large Desktop (700px+) === **/
+
+    @media screen and (min-width: 700px) {
+        body {
+            width: 650px;
+            background-color: white;
+            margin: auto;
+            border: 5px solid black;
+        }
+        #mobileHeadshot {
+            display: none;
+        }
+    }
+
+/** === Medium Desktop (600 - 700) === **/
+    @media screen and (min-width: 600px) and (max-width: 700px) {
+        #mobileHeadshot {
+            display: none;
+        }
+        body {
+            margin: auto;
+            border: 1px solid black;
+        }
+    }
+
+/** === Mobile (<600) === **/
+    @media only screen and (max-width: 600px) {
+        #desktopHeadshot {
+            display: none;
+        }
+        body {
+            margin: auto;
+            border: 1px solid black;
+        }
+    }
