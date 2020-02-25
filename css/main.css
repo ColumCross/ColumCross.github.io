@@ -1,5 +1,7 @@
 /** CSS for my Portfolio **/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 /** === Nav bar CSS === **/
     /* Do something with vector graphics, or css graphics. */
     nav > ul {
@@ -10,15 +12,14 @@
 
     h1,h2 {
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
     img#desktopHeadshot {
-        margin: 10px auto 50px;
-        width: 500px;
-        height: 500px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        /* margin: 10px auto 50px; */
+        width: 125px;
+        height: 125px;
+        margin: 0 0 0 0px;
+        border-radius: 50%;
     }
     img#mobileHeadshot {
         margin: 10px auto 5px;
@@ -27,6 +28,38 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 50%;
+    }
+
+    #bioblock {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    p {
+        padding: 0px 20px;
+        text-align: justify;
+        font-family: 'Roboto', Helvetica;
+    }
+
+    .infoBlock {
+        width: 300px;
+        margin: auto;
+    }
+    .infoBlock p {
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        font-family: 'Roboto', Helvetica;
+        text-align: center;
+    }
+    h5 {
+        font-family: 'Roboto', Helvetica;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
     }
 
 /** === Large Desktop (700px+) === **/
