@@ -91,16 +91,11 @@
         padding-top: 20px;
     }
     .project h5 {
-        text-align: center;
         font-family: 'Roboto', Helvetica;
-        display: inline-block;
-        margin: 0 20px;
-    }
-    .project h5:last-of-type {
-        float: right;
+        text-align: center;
     }
 
-/** === Large Desktop (700px+) === **/
+/** === Large Desktop (850px+) === **/
 
     @media screen and (min-width: 850px) {
         body {
@@ -113,10 +108,18 @@
         #mobileHeadshot {
             display: none !important;
         }
+
+        .project h5 {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .project h5:last-of-type {
+            float: right;
+        }
     }
 
-/** === Medium Desktop (600 - 700) === **/
-    @media screen and (min-width: 600px) and (max-width: 700px) {
+/** === Medium Desktop (600 - 850) === **/
+    @media screen and (min-width: 600px) and (max-width: 849px) {
         #mobileHeadshot {
             display: none !important;
         }
@@ -124,6 +127,14 @@
             margin: auto;
             border: 1px solid black;
             padding-bottom: 50px;
+        }
+
+        .project h5 {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        .project h5:last-of-type {
+            float: right;
         }
     }
 
@@ -134,7 +145,7 @@
         }
         body {
             margin: auto;
-            border: 1px solid black;
+            border: 0px solid black;
             padding-bottom: 50px;
         }
     }
