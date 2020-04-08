@@ -39,13 +39,12 @@
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
     img#desktopHeadshot {
-        /* margin: 10px auto 50px; */
         width: 125px;
         height: 125px;
         margin: 0 0 0 0px;
         border-radius: 50%;
     }
-    img#mobileHeadshot {
+    img.mobileHeadshot {
         margin: 10px auto 5px;
         width: 25%;
         height: 25%;
@@ -66,6 +65,7 @@
         text-align: justify;
         font-family: 'Roboto', Helvetica;
     }
+    
 
     .infoBlock {
         width: 200px;
@@ -128,7 +128,7 @@
             border: 5px solid black;
             padding-bottom: 20px;
         }
-        #mobileHeadshot {
+        .mobileHeadshot {
             display: none !important;
         }
 
@@ -160,7 +160,6 @@
             border: 1px solid black;
             padding-bottom: 50px;
         }
-
         .project h5 {
             display: inline-block;
             margin: 0 20px;
