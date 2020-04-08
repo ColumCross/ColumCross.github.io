@@ -1,48 +1,24 @@
 /** CSS for my Portfolio **/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 /** === Nav bar CSS === **/
     /* Do something with vector graphics, or css graphics. */
-    
-    nav {
-        overflow: hidden;
-        background-color: #000000;
-    }
-    
-    nav a {
-        float: left;
-        color: #ffffff;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    }
-    
-    nav a:hover {
-        background-color: #a7a7a7;
-        color: black;
-    }
-    
-    nav a.active {
-        background-color: white;
-        color: black;
+    nav > ul {
+        display: inline;
     }
 
 /** === All Screens === **/
 
-    /* Home Page */
-
-    h1,h2 {
+    h1,h2,p {
         text-align: center;
-        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    img#desktopHeadshot {
-        width: 125px;
-        height: 125px;
-        margin: 0 0 0 0px;
-        border-radius: 50%;
+    img.desktopHeadshot {
+        margin: 10px auto 50px;
+        width: 500px;
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     img.mobileHeadshot {
         margin: 10px auto 5px;
@@ -51,129 +27,41 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%;
-    }
-
-    #bioblock {
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    p {
-        padding: 0px 20px;
-        text-align: justify;
-        font-family: 'Roboto', Helvetica;
     }
     
 
-    .infoBlock {
-        width: 200px;
-        margin: auto;
-        /* border: 1px dotted black; */
-    }
-    .infoBlock a:hover, .project a:hover {
-        color: white !important;
-        background-color: black;
-    }
-    .infoBlock a, .project a {
-        color: black !important;
-    }
-    .infoBlock p {
-        margin: 0;
-        padding: 0;
-    }
-    h3 {
-        font-family: 'Roboto', Helvetica;
-        text-align: center;
-    }
-    .infoBlock h5 {
-        font-family: 'Roboto', Helvetica;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 0;
-    }
+/** === Large Desktop (700px+) === **/
 
-    /* Project Page */
-
-    .project img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 20%;
-    }
-    .project {
-        margin-bottom: 20px;
-        border-top: 1px solid black;
-        padding-top: 20px;
-    }
-    .project:first-of-type {
-        border-top: 0px;
-    }
-    .project h5 {
-        font-family: 'Roboto', Helvetica;
-        text-align: center;
-    }
-
-    /* Resume */
-    
-
-/** === Large Desktop (850px+) === **/
-
-    @media screen and (min-width: 850px) {
+    @media screen and (min-width: 700px) {
         body {
-            width: 800px;
+            width: 650px;
             background-color: white;
             margin: 20px auto;
             border: 5px solid black;
-            padding-bottom: 20px;
         }
         .mobileHeadshot {
             display: none !important;
         }
-
-        .project h5 {
-            display: inline-block;
-            margin: 0 20px;
-        }
-        .project h5:last-of-type {
-            float: right;
-        }
-
-        #desktopResume {
-            margin: 20px auto;
-            text-align: center;
-            display: block;
-        }
-        #mobileResume {
-            display: none;
-        }
     }
 
-/** === Medium Desktop (600 - 850) === **/
-    @media screen and (min-width: 600px) and (max-width: 849px) {
-        #mobileHeadshot {
+/** === Medium Desktop (600 - 700) === **/
+    @media screen and (min-width: 600px) and (max-width: 700px) {
+        .mobileHeadshot {
             display: none !important;
         }
         body {
             margin: auto;
             border: 1px solid black;
-            padding-bottom: 50px;
         }
-        .project h5 {
-            display: inline-block;
-            margin: 0 20px;
-        }
-        .project h5:last-of-type {
-            float: right;
-        }
+    }
 
-        #desktopResume {
-            margin: 20px auto;
-            text-align: center;
-            display: block;
+/** === Mobile (<600) === **/
+    @media only screen and (max-width: 600px) {
+        .desktopHeadshot {
+            display: none !important;
         }
-        #mobileResume {
-            display: none;
+        body {
+            margin: auto;
+            border: 1px solid black;
         }
     }
