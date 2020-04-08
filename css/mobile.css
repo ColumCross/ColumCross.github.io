@@ -1,0 +1,22 @@
+/** === Mobile (<600) === **/
+@media only screen and (max-width: 600px) {
+    #desktopHeadshot {
+        display: none !important;
+    }
+    body {
+        margin: auto;
+        border: 0px solid black;
+        padding-bottom: 50px;
+    }
+
+    #desktopResume {
+        display: none;
+    }
+    #mobileResume {
+        display: block;
+        color: black !important;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+}

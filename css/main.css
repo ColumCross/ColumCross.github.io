@@ -4,19 +4,35 @@
 
 /** === Nav bar CSS === **/
     /* Do something with vector graphics, or css graphics. */
-    nav > ul {
-        display: inline;
-        border: 1px solid black;
-        text-align: center;
-        list-style: none;
-        padding: 0px;
-    }
+    
     nav {
-        margin: auto;
+        overflow: hidden;
+        background-color: #000000;
+    }
+    
+    nav a {
+        float: left;
+        color: #ffffff;
         text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    
+    nav a:hover {
+        background-color: #a7a7a7;
+        color: black;
+    }
+    
+    nav a.active {
+        background-color: white;
+        color: black;
     }
 
 /** === All Screens === **/
+
+    /* Home Page */
 
     h1,h2 {
         text-align: center;
@@ -78,22 +94,29 @@
         padding: 0;
     }
 
+    /* Project Page */
+
     .project img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 20%;
     }
-
     .project {
         margin-bottom: 20px;
         border-top: 1px solid black;
         padding-top: 20px;
     }
+    .project:first-of-type {
+        border-top: 0px;
+    }
     .project h5 {
         font-family: 'Roboto', Helvetica;
         text-align: center;
     }
+
+    /* Resume */
+    
 
 /** === Large Desktop (850px+) === **/
 
@@ -103,7 +126,7 @@
             background-color: white;
             margin: 20px auto;
             border: 5px solid black;
-            padding-bottom: 50px;
+            padding-bottom: 20px;
         }
         #mobileHeadshot {
             display: none !important;
@@ -115,6 +138,15 @@
         }
         .project h5:last-of-type {
             float: right;
+        }
+
+        #desktopResume {
+            margin: 20px auto;
+            text-align: center;
+            display: block;
+        }
+        #mobileResume {
+            display: none;
         }
     }
 
@@ -136,16 +168,13 @@
         .project h5:last-of-type {
             float: right;
         }
-    }
 
-/** === Mobile (<600) === **/
-    @media only screen and (max-width: 600px) {
-        #desktopHeadshot {
-            display: none !important;
+        #desktopResume {
+            margin: 20px auto;
+            text-align: center;
+            display: block;
         }
-        body {
-            margin: auto;
-            border: 0px solid black;
-            padding-bottom: 50px;
+        #mobileResume {
+            display: none;
         }
     }
