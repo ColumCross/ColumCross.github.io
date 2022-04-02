@@ -65,6 +65,7 @@
         padding: 0px 20px;
         text-align: justify;
         font-family: 'Roboto', Helvetica;
+        line-height: 135%;
     }
 
     .infoBlock {
