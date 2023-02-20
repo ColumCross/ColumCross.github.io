@@ -38,7 +38,7 @@
         text-align: center;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
     }
-    img#desktopHeadshot {
+    img.desktopHeadshot {
         /* margin: 10px auto 50px; */
         width: 125px;
         height: 125px;
@@ -55,7 +55,7 @@
         border-radius: 50%;
     }
 
-    #bioblock {
+    .bioblock {
         display: flex;
         align-items: center;
         padding-left: 20px;
@@ -83,6 +83,7 @@
     .infoBlock p {
         margin: 0;
         padding: 0;
+        text-align: center;
     }
     h3 {
         font-family: 'Roboto', Helvetica;
@@ -114,6 +115,30 @@
     .project h5 {
         font-family: 'Roboto', Helvetica;
         text-align: center;
+    }
+
+    /* Privacy Policies */
+
+    img.logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        padding-top: 20px;
+    }
+    .privacypolicy h5 {
+        font-family: 'Roboto', Helvetica;
+        display: inline-block;
+        margin: 0 20px;
+    }
+    p.about {
+        padding: 0px 40px;
+    }
+    .privacypolicy hr {
+        width: 50%;
+    }
+    .privacypolicy h3 {
+        font-weight: normal;
     }
 
     /* Resume */
