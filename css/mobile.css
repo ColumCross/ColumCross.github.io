@@ -13,7 +13,7 @@
         display: none;
     }
 
-    a#mobileResume {
+    a.mobileResume {
         display: block;
         color: black !important;
         text-align: center;

@@ -171,7 +171,7 @@
             text-align: center;
             display: block;
         }
-        #mobileResume {
+        .mobileResume {
             display: none;
         }
     }
@@ -200,7 +200,7 @@
             text-align: center;
             display: block;
         }
-        #mobileResume {
+        .mobileResume {
             display: none;
         }
     }
