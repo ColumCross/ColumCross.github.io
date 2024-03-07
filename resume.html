@@ -8,14 +8,16 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+    <script src="main.js"></script>
 
     <title>Colum Cross's Resume</title>
 </head>
-<body>
+<body onload="setMode()">
     <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a class="active" href="resume.html">Resume</a>
+        <a onclick="toggleDarkMode()">Dark Mode</a>
     </nav>
     <div id="desktopResume">
         <iframe src="assets/resumes/Colum Cross Resume.pdf" width="90%" height="1225px" frameborder="0"></iframe>

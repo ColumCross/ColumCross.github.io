@@ -8,14 +8,16 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+    <script src="main.js"></script>
 
     <title>Colum Cross's Projects</title>
 </head>
-<body>
+<body onload="setMode()">
     <nav>
         <a href="index.html">Home</a>
         <a class="active" href="projects.html">Projects</a>
         <a href="resume.html">Resume</a>
+        <a onclick="toggleDarkMode()">Dark Mode</a>
     </nav>
 
     <div class="project" id="warmercolder">

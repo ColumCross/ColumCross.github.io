@@ -12,7 +12,7 @@
     
     nav a {
         float: left;
-        color: #ffffff;
+        color: #ffffff !important;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -22,12 +22,12 @@
     
     nav a:hover {
         background-color: #a7a7a7;
-        color: black;
+        color: black !important;
     }
     
     nav a.active {
         background-color: white;
-        color: black;
+        color: black !important;
     }
 
 /** === All Screens === **/
@@ -74,11 +74,11 @@
         /* border: 1px dotted black; */
     }
     .infoBlock a:hover, .project a:hover {
-        color: white !important;
+        color: white;
         background-color: black;
     }
     .infoBlock a, .project a {
-        color: black !important;
+        color: black;
     }
     .infoBlock p {
         margin: 0;

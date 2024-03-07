@@ -10,13 +10,15 @@
 
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+        <script src="main.js"></script>
 
     </head>
-    <body>
+    <body onload="setMode()">
         <nav>
             <a class="active" href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="resume.html">Resume</a>
+            <a onclick="toggleDarkMode()">Dark Mode</a>
         </nav>
         <img src="assets/profile_square.jpg" alt="Picture of Colum Cross" id="mobileHeadshot">
         <h1>Colum Cross</h1>
